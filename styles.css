@@ -1,0 +1,204 @@
+:root {
+  --p1: #a99b86;
+  --p2: #896f59;
+  --p3: #875d4f;
+  --p4: #5c3935;
+  --p5: #402f2f;
+  
+}
+/*
+https://www.color-hex.com/color-palette/7549
+
+ var(--p1) 
+  var(--p2) 
+   var(--p3) 
+    var(--p4) 
+	 var(--p5) 
+	 
+ */
+
+
+
+Body{
+	
+    background: linear-gradient(-45deg, var(--p1), var(--p2),  var(--p3) , var(--p4), var(--p5) );
+    background-size: 500% 500%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+	text-shadow: 2px 2px var(--p5);
+}
+
+.menu{
+	transition: transform .4s;
+}
+
+.menu:hover {
+    color: var(--p1) ; 
+    cursor:pointer; 
+	background-color:  rgba(64, 47, 47, .5) ;
+	text-shadow: 2px 2px var(--p5);
+	border-radius: 10px;
+    transform: scale(1.25);
+
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+h1{
+	font-family:  Verdana, sans-serif ;
+	letter-spacing:5px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 50px;
+	font-size: 50px;
+	color: white;
+	text-shadow: 2px 2px var(--p5);
+	}
+	
+
+.Home {
+	
+	background-image: url("https://images.pexels.com/photos/4820677/pexels-photo-4820677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+	background-size: cover;
+	background-repeat:   no-repeat;
+	background-position: center top;
+	background-size: 100% ;
+	margin: 2% 2%;
+	border-radius: 30px;
+}
+.World{
+	
+	background-image: url("https://images.pexels.com/photos/3999940/pexels-photo-3999940.jpeg?cs=srgb&dl=pexels-caner-cankisi-3999940.jpg&fm=jpg");
+	background-size: cover;
+	background-repeat:   no-repeat;
+	background-position: top center;
+	margin: 2% 2%;
+	border-radius: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+
+h2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 22px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	
+	}
+	
+
+
+
+.coffeetypes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 40px 10px;
+}
+.coffeetype {
+	background-color: #ccc;
+	opacity: .75;
+	width:400px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	padding: 0 10px;
+	color: var(--p5) ;
+	font-size:32px;
+
+  transition: transform .2s; /* Animation */
+}
+
+.coffeetype p {
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	padding: 0 10px;
+	color: var(--p5) ;
+	font-size:15px;
+  transition: transform .2s; /* Animation */
+}
+
+.coffeetype:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  opacity: 1;
+}
+.coffeetype img {
+	display: flex;
+	justify-content: left;
+	object-fit: cover;
+	}
+/* ------------------------------------------------------------------------------------------------- */
+.transparentbg {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: rgba(204, 204, 204, .75);
+
+	margin: 20px 10%;
+	height: 1000px;
+    border-radius: 30px;
+	justify-content: center;
+	text-align: center;
+	align-items: baseline;
+	
+}
+.transparentbg p1{
+	font-size: 50px;
+	font-family: Verdana, sans-serif;
+	padding: 0 10px;
+	
+}
+.transparentbg p2{
+	font-size: 25px;
+	font-family: Verdana, sans-serif;
+	padding: 0 40px;
+	
+}
+
+
+
+ .Contact{
+	display: flex;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+	justify-content: center;
+	background-color: #ccc;
+	opacity: .5;
+	border-radius: 10px;
+	}
+	
+/* ------------------------------------------------------------------------------------------------- */
